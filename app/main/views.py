@@ -1,6 +1,9 @@
-from flask import render_template
+from flask import render_template, request
 from . import main
+from  ..requests import get_books
 
-@main.route('/')
+@main.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    
+    books=get_books()
+    return render_template('index.html', books=books)
