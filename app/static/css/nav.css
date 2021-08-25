@@ -1,0 +1,73 @@
+.navbar{
+    background-color: #D4AC0D;
+}
+#brands{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+#but2{
+    margin-right: 10px;
+}
+.br {
+    color: #3C1874;
+  }
+  .navbar-toggler{
+      background-color: #F1B24A;
+      color: black;
+  }
+.nav-item a{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+.nav-item a:hover{
+    color:#F1B24A;
+}
+.con{
+    color: #F1B24A;
+    text-align: right;
+}
+#active{
+    color: #3C1874;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+#gits{
+    border-color: #3C1874;
+    color: white;
+    margin: 10px;
+}
+#gits:hover{
+    border-color: #3C1874;
+    background-color: #3C1874;
+}
+#jumbotron{
+    margin-top: 40px;
+    border-radius: 8px;
+    background-color: #E8F6F3;
+}
+#titles{
+    color: green;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.card-text{
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+.footer{
+    background-color: #273746;
+    height: 60px;
+    margin-top: 100vh;
+}
+.text{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+}
