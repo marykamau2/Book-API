@@ -38,7 +38,6 @@ def create_app(config_name):
       
     from .requests import configure_request
     configure_request(app)
-    db.init()
-    db.create_all()
+
     
     return app
