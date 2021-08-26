@@ -25,7 +25,7 @@ def create_app(config_name):
     
         # Registering main blueprint
     from . main import main as main_blueprint
-    app . register_blueprint (main_blueprint)
+    app.register_blueprint (main_blueprint)
 
 
         #Register auth blueprint
@@ -35,9 +35,5 @@ def create_app(config_name):
         # # Configure request   
     from .requests import configure_request
     configure_request(app)
-      
-    from .requests import configure_request
-    configure_request(app)
-
     
     return app
