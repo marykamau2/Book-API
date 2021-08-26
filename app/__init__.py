@@ -23,23 +23,22 @@ def create_app(config_name):
     # configure UploadSet
     bootstrap = Bootstrap(app)
     
-    with app.app_context():
         # Registering main blueprint
-        from . main import main as main_blueprint
-        app . register_blueprint (main_blueprint)
+    from . main import main as main_blueprint
+    app . register_blueprint (main_blueprint)
 
 
         #Register auth blueprint
-        from .auth import auth as auth_blueprint
-        app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
+    from .auth import auth as auth_blueprint
+    app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
     
         # # Configure request   
-        from .requests import configure_request
-        configure_request(app)
+    from .requests import configure_request
+    configure_request(app)
       
-        from .requests import configure_request
-        configure_request(app)
-        
-        db.create_all()
+    from .requests import configure_request
+    configure_request(app)
+    db.init()
+    db.create_all()
     
     return app
