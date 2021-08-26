@@ -1,7 +1,10 @@
 class Books:
     
-    def __init__(self, id,volumeInfo,imageLinks,saleInfo):
+    def __init__(self, id,title,subtitle,authors, description, thumbnail, saleability):
         self.id = id
-        self.volumeInfo=volumeInfo
-        self.imageLinks = imageLinks
-        self.saleInfo = saleInfo
+        self.title=title
+        self.subtitle = subtitle
+        self.authors = authors
+        self.description = description
+        self.thumbnail = thumbnail
+        self.saleability = saleability

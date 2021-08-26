@@ -24,8 +24,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex" action="/" method="POST">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searchForm">
                 <button class="btn btn-outline-success" id="gits" type="submit">Search</button>
               </form>
               <a href="">
@@ -37,66 +37,8 @@
         </div>
       </nav> 
 
-
-    <section>
-        <div class="container">
-            <div class="row">
-               <div class="col-md-2">
-                <div class="card" id="jumbotron">
-                    <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="books">
-                    <div class="card-body">
-                        <h6 id="titles" class="text-center">Book Title</h6>
-                      <p class="card-text">Some quick example text Book description</p>
-                  </div>
-               </div> 
-            </div>
-            <div class="col-md-2">
-              <div class="card" id="jumbotron">
-                  <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="books">
-                  <div class="card-body">
-                      <h6 id="titles" class="text-center">Book Title</h6>
-                    <p class="card-text">Some quick example text Book description</p>
-                </div>
-             </div> 
-          </div>
-          <div class="col-md-2">
-            <div class="card" id="jumbotron">
-                <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="books">
-                <div class="card-body">
-                    <h6 id="titles" class="text-center">Book Title</h6>
-                  <p class="card-text">Some quick example text Book description</p>
-              </div>
-           </div> 
-        </div>
-        <div class="col-md-2">
-          <div class="card" id="jumbotron">
-              <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="books">
-              <div class="card-body">
-                  <h6 id="titles" class="text-center">Book Title</h6>
-                <p class="card-text">Some quick example text Book description</p>
-            </div>
-         </div> 
-      </div>
-      <div class="col-md-2">
-        <div class="card" id="jumbotron">
-            <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="books">
-            <div class="card-body">
-                <h6 id="titles" class="text-center">Book Title</h6>
-              <p class="card-text">Some quick example text Book description</p>
-          </div>
-       </div> 
-    </div>
-    <div class="col-md-2">
-      <div class="card" id="jumbotron">
-          <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="books">
-          <div class="card-body">
-              <h6 id="titles" class="text-center">Book Title</h6>
-            <p class="card-text">Some quick example text Book description</p>
-        </div>
-     </div> 
-  </div>
-        </div>
-    </section>
+      {% block maincontent %}
+       {% endblock %}
     <section class="footer">
       <div class="container">
         <div class="row">

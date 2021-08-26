@@ -4,7 +4,7 @@ class Config:
     General class configurations
     '''
     # BOOKS_API_BASE_URL = 'https://www.googleapis.com/books/v1/volumes?q={}'
-    BOOKS_API_BASE_URL= 'https://www.googleapis.com/books/v1/volumes?q=search+terms'
+    BOOKS_API_BASE_URL= 'https://www.googleapis.com/books/v1/volumes?q={}'
     
 class ProdConfig(Config):
     pass
