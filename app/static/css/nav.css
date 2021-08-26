@@ -2,7 +2,7 @@
     background-color: #D4AC0D;
 }
 #brands{
-    color: white;
+    color: rgb(235, 49, 49);
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     font-weight: 900;
@@ -11,14 +11,14 @@
     margin-right: 10px;
 }
 .br {
-    color: #3C1874;
+    color: #a97dee;
   }
   .navbar-toggler{
       background-color: #F1B24A;
       color: black;
   }
 .nav-item a{
-    color: white;
+    color: rgb(163, 189, 15);
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
@@ -36,18 +36,14 @@
 }
 #gits{
     border-color: #3C1874;
-    color: white;
-    margin: 10px;
+    color: rgb(81, 216, 39);
+    margin: 10px; 
 }
 #gits:hover{
     border-color: #3C1874;
     background-color: #3C1874;
 }
-#jumbotron{
-    margin-top: 40px;
-    border-radius: 8px;
-    background-color: #E8F6F3;
-}
+
 #titles{
     color: green;
     text-align: center;
@@ -61,12 +57,12 @@
 }
 .footer{
     background-color: #273746;
-    height: 60px;
-    margin-top: 100vh;
+    /* height: 60px; */
+    /* margin-top: 100vh; */
 }
 .text{
     text-align: center;
-    color: white;
+    color: rgb(228, 33, 33);
     padding: 10px;
     font-family: 'Playfair Display', serif;
     font-size: 13px;

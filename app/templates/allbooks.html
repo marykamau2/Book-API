@@ -1,8 +1,10 @@
 {% extends 'index.html' %}
-{% block maincontent %}
-<section>
-    <div class="container">
-        <div class="row">
+
+{% block main %}
+{% include 'nav.html' %}
+
+    <div class="container p-2 mt-5">
+        <div class="row ">
         {% for book in books %}
         <div class="col-md-3 mb-2">
           <div class="card h-100" id="jumbotron">
@@ -15,5 +17,9 @@
       </div>
       {% endfor %}
 </div>
-</section>
+</div>
+<div class="footer mt-5" style="width: 100%;">
+    {% include 'footer.html' %}
+</div>
 {% endblock %}
+
