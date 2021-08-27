@@ -6,20 +6,19 @@ class Config:
     General class configurations
     '''
     BOOKS_API_BASE_URL= 'https://www.googleapis.com/books/v1/volumes?q={}'
-
+ 
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://leresipitchdb:pitchidea@localhost/pitches'
   
 
     
     
 class ProdConfig(Config):
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
+    # SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
     SECRET_KEY ='lkjelkjdskjdjwjepjdhah'
 
 class DevConfig(Config):
-    MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
-    MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-    SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://garlinsk:kenya254@localhost/books'
+
 
     DEBUG = True
 
