@@ -17,7 +17,7 @@ def create_app(config_name):
     with app.app_context():
     # Initializing flask extensions
         login_manager.init_app(app)
-        db.app = app
+        db.init_app(app)
         mail.init_app(app)
     # configure UploadSet
         bootstrap = Bootstrap(app)
