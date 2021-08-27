@@ -1,6 +1,6 @@
 # BOOKS PROJECT
 #### This is a project made using python showing an app that helps to retrieve books for a user and allows them to review on their books, 2021
-#### By **David Njungo Kimani**
+#### By **Group 2**
 ## Description
 The project displays books with their authors,allows the user to log in and make review and comments in a book
 ## Setup/Installation Requirements
