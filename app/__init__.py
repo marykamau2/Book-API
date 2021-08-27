@@ -15,17 +15,17 @@ def create_app(config_name):
     app = Flask(__name__)
     
     app.config.from_object(config_options[config_name])
-    
+    with app.app_context:
     # Initializing flask extensions
-    login_manager.init_app(app)
-    db.app = app
-    mail.init_app(app)
+        login_manager.init_app(app)
+        db.app = app
+        mail.init_app(app)
     # configure UploadSet
-    bootstrap = Bootstrap(app)
+        bootstrap = Bootstrap(app)
     
         # Registering main blueprint
-    from . main import main as main_blueprint
-    app.register_blueprint (main_blueprint)
+        from . main import main as main_blueprint
+        app.register_blueprint (main_blueprint)
 
 
         #Register auth blueprint
