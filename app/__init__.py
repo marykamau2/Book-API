@@ -13,9 +13,8 @@ db = SQLAlchemy()
 mail = Mail()
 def create_app(config_name):
     app = Flask(__name__)
-    
     app.config.from_object(config_options[config_name])
-    with app.app_context:
+    with app.app_context():
     # Initializing flask extensions
         login_manager.init_app(app)
         db.app = app
@@ -29,11 +28,12 @@ def create_app(config_name):
 
 
         #Register auth blueprint
-    from .auth import auth as auth_blueprint
-    app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
+        from .auth import auth as auth_blueprint
+        app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
     
         # # Configure request   
-    from .requests import configure_request
-    configure_request(app)
-    
+        from .requests import configure_request
+        configure_request(app)
+
+        db.create_all()
     return app
